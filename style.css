@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    min-height: 5vh;
+}
+
+.container>div {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#mainHeader {
+    grid-area: 1 / 2 / 1 / 9;
+}
+
+#sidebar {
+    height: 100vh;
+}
+
+#mainContent {
+    grid-area: 2 / 2 / 2 / 9;
+}
