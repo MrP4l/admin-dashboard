@@ -11,7 +11,7 @@
 
 /*Header*/
 
-.container > div {
+.container>div {
     border: 1px solid rgb(0, 0, 0);
 }
 
@@ -20,7 +20,7 @@
     justify-content: center;
     align-items: center;
     background-color: #0f172a;
-    border-bottom: dashed white 1.5px;
+    border-bottom: dashed #9ca3af 1.5px;
 }
 
 #mainHeader {
@@ -28,14 +28,14 @@
     justify-content: space-between;
 }
 
-#mainHeader > div {
+#mainHeader>div {
     display: flex;
     flex-wrap: wrap;
     flex: 1;
     align-items: center;
 }
 
-#mainHeader > div > div {
+#mainHeader>div>div {
     margin: 1.5vh;
     justify-content: flex-start;
     height: 2vh;
@@ -44,7 +44,7 @@
     color: #374151;
 }
 
-#mainHeader > div > div:hover {
+#mainHeader>div>div:hover {
     color: #0ea5e9;
     background-color: #e2e8f0;
 }
@@ -80,32 +80,45 @@
     background-color: #0f172a;
 }
 
-#sidebar > div {
-    border: yellow solid;
+#sidebar>div {
     width: 100%;
     height: 3%;
     margin-left: 4vh;
-    margin-bottom: 1vh;
+    margin-bottom: 0.5vh;
+    margin-right: 6vh;
 }
 
-#sidebar > div:hover {
+#sidebar>div:hover {
     color: #f1f5f9;
 }
 
-#sidebar > div:first-child {
-    border: red solid;
+#sidebar>div:first-child {
     height: 5%;
     margin-top: 2vh;
     color: #f1f5f9;
 }
 
 #sidebar div:nth-child(2) {
-    
-  }
+    margin-left: 3.2vh;
+    font-weight: bold;
+}
 
-  /*MainContent*/
+#sidebar div:nth-child(2):hover {
+    color: #9ca3af;
+}
+
+#sidebar div:nth-child(14) {
+    margin-top: 2vh;
+    margin-left: 3.2vh;
+    font-weight: bold;
+}
+
+#sidebar div:nth-child(14):hover {
+    color: #9ca3af;
+}
+
+/*MainContent*/
 
 #mainContent {
     grid-area: 2 / 2 / 2 / 9;
 }
-
