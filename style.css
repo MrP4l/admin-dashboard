@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -12,7 +13,7 @@
 /*Header*/
 
 .container>div {
-    border: 1px solid rgb(0, 0, 0);
+    /*border: 1px solid rgb(0, 0, 0);*/
 }
 
 #headerLogo {
@@ -20,7 +21,7 @@
     justify-content: center;
     align-items: center;
     background-color: #0f172a;
-    border-bottom: dashed #9ca3af 1.5px;
+    border-bottom: dashed #374151 1.5px;
 }
 
 #mainHeader {
@@ -42,6 +43,8 @@
     border-radius: 8px;
     padding: 6px;
     color: #374151;
+    font-size: 0.8vw;
+    cursor: pointer;
 }
 
 #mainHeader>div>div:hover {
@@ -59,7 +62,7 @@
 
 .fa-github {
     color: #fbbf24;
-    font-size: 2.8rem;
+    font-size: 2.5vw;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -83,31 +86,34 @@
 #sidebar>div {
     width: 100%;
     height: 3%;
-    font-size: 1rem;
-    margin-left: 50px;
-    margin-bottom: 15px;
+    font-size: 0.8vw;
+    margin-left: 3vw;
+    margin-bottom: 10px;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .icon {
     position: relative;
-    top: 4px;
+    top: 2.8px;
     left: 1px;
-  }
+}
 
 #sidebar>div:hover {
     color: #f1f5f9;
 }
 
 #sidebar>div:first-child {
-    height: 5%;
+    height: 3%;
     margin-top: 30px;
     color: #f1f5f9;
 }
 
 #sidebar div:nth-child(2) {
-    margin-left: 3.2vh;
-    font-weight: bold;
+    margin-left: 2vw;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 0.7vw;
 }
 
 #sidebar div:nth-child(2):hover {
@@ -115,9 +121,10 @@
 }
 
 #sidebar div:nth-child(14) {
-    margin-top: 2vh;
-    margin-left: 3.2vh;
-    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 2vw;
+    font-weight: 600;
+    font-size: 0.7vw;
 }
 
 #sidebar div:nth-child(14):hover {
@@ -128,4 +135,5 @@
 
 #mainContent {
     grid-area: 2 / 2 / 2 / 9;
+    background-color: rgb(245, 248, 250);
 }
