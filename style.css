@@ -3,6 +3,10 @@
     font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -38,13 +42,14 @@
 
 #mainHeader>div>div {
     margin: 1.5vh;
-    justify-content: flex-start;
     height: 2vh;
     border-radius: 8px;
     padding: 6px;
     color: #374151;
-    font-size: 0.8vw;
+    font-size: 14px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 #mainHeader>div>div:hover {
@@ -54,6 +59,7 @@
 
 #headerRightElements {
     justify-content: flex-end;
+
 }
 
 #mainHeader {
@@ -62,7 +68,7 @@
 
 .fa-github {
     color: #fbbf24;
-    font-size: 2.5vw;
+    font-size: 45px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -81,22 +87,26 @@
     align-content: flex-start;
     color: #9ca3af;
     background-color: #0f172a;
+    /*OVERFLOW*/
 }
 
+
 #sidebar>div {
-    width: 100%;
-    height: 3%;
-    font-size: 0.8vw;
-    margin-left: 3vw;
-    margin-bottom: 10px;
+    width: 250px;
+    height: 25px;
+    font-size: 14px;
+    margin-left: 2.5vw;
+    margin-bottom: 7px;
     margin-right: 20px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    /*OVERFLOW*/
 }
 
 .icon {
     position: relative;
-    top: 2.8px;
-    left: 1px;
+    margin-right: 5px;
 }
 
 #sidebar>div:hover {
@@ -104,16 +114,17 @@
 }
 
 #sidebar>div:first-child {
-    height: 3%;
-    margin-top: 30px;
+    height: 2%;
+    margin-top: 25px;
     color: #f1f5f9;
 }
 
 #sidebar div:nth-child(2) {
-    margin-left: 2vw;
+    margin-left: 1.5vw;
     margin-top: 20px;
     font-weight: 600;
-    font-size: 0.7vw;
+    font-size: 13px;
+    margin-right: 40px;
 }
 
 #sidebar div:nth-child(2):hover {
@@ -122,12 +133,37 @@
 
 #sidebar div:nth-child(14) {
     margin-top: 20px;
-    margin-left: 2vw;
+    margin-left: 1.5vw;
     font-weight: 600;
-    font-size: 0.7vw;
+    font-size: 13px;
+    margin-right: 40px;
 }
 
 #sidebar div:nth-child(14):hover {
+    color: #9ca3af;
+}
+
+#sidebar div:nth-child(27) {
+    margin-top: 20px;
+    margin-left: 1.5vw;
+    font-weight: 600;
+    font-size: 13px;
+    margin-right: 40px;
+}
+
+#sidebar div:nth-child(27):hover {
+    color: #9ca3af;
+}
+
+#sidebar div:nth-child(31) {
+    margin-top: 20px;
+    margin-left: 1.5vw;
+    font-weight: 600;
+    font-size: 13px;
+    margin-right: 40px;
+}
+
+#sidebar div:nth-child(31):hover {
     color: #9ca3af;
 }
 
