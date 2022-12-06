@@ -187,7 +187,9 @@
     border-radius: 10px;
     background-color: white;
     text-align: center;
-    font-size: 1vw;
+    font-size: max(15px,2vh);
+    overflow: auto;
+    background-color: #0ea5e9;;
 }
 
 #contentContainer>div:nth-child(10) {
@@ -234,7 +236,7 @@
 
 #bottomContentContainer>div {
     border-radius: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: #0ea5e9;
 }
 
 #tenthIsle {
